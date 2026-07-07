@@ -1,11 +1,11 @@
 import java.util.Scanner;
 
-public class Calculator1 {
+public class Calculator {
 
     public static void main(String[] args) {
 
         Scanner sc = new Scanner(System.in);
-        Calculator1 cal = new Calculator1();
+        Calculator cal = new Calculator();
 
         int num1, num2, operation;
         char choice = 'Y';
