@@ -1,15 +1,15 @@
-package ATMSystem;
+package com.aeropelican.service;
+
+import com.aeropelican.model.UserAccount;
 import java.util.HashMap;
 import java.util.Map;
 
 public class ATMService {
-
-    private Map<String, UserAccount> accountDatabase = new HashMap<>();
+    private final Map<String, UserAccount> accountDatabase = new HashMap<>();
 
     public ATMService() {
         initializeMockUsers();
     }
-
 
     private void initializeMockUsers() {
         accountDatabase.put("21671221", new UserAccount("21671221", "Varun Reddy", 5000.0));

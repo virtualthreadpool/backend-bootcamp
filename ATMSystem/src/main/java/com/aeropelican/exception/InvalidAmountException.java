@@ -1,4 +1,4 @@
-package ATMSystem;
+package com.aeropelican.exception;
 
 public class InvalidAmountException extends Exception {
     public InvalidAmountException(String message) {

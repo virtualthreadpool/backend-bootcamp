@@ -1,8 +1,11 @@
-package ATMSystem;
+package com.aeropelican.model;
+
+import com.aeropelican.exception.InsufficientBalanceException;
+import com.aeropelican.exception.InvalidAmountException;
 
 public class UserAccount {
-    private String accountNumber;
-    private String userName;
+    private final String accountNumber;
+    private final String userName;
     private double balance;
 
     public UserAccount(String accountNumber, String userName, double initialBalance) {
@@ -15,7 +18,6 @@ public class UserAccount {
     public String getUserName() { return userName; }
     public double getBalance() { return balance; }
 
-    // Deposit method throws checked exception for negative/zero values
     public void deposit(double amount) throws InvalidAmountException {
         if (amount <= 0) {
             throw new InvalidAmountException("Transaction failed: Amount must be greater than zero.");
@@ -24,7 +26,6 @@ public class UserAccount {
         System.out.println("Successfully deposited: ₹" + amount);
     }
 
-    // Withdraw method checks both input validity and account funds
     public void withdraw(double amount) throws InvalidAmountException, InsufficientBalanceException {
         if (amount <= 0) {
             throw new InvalidAmountException("Transaction failed: Amount must be greater than zero.");
