@@ -1,8 +1,11 @@
-package ATMSystem;
+package com.aeropelican;
+
 import java.util.HashMap;
 
 public class UserData {
+
     public static HashMap<Integer, User> getUsers() {
+
         HashMap<Integer, User> users = new HashMap<>();
 
         users.put(1001, new User(1001, "Shiva", 5000));

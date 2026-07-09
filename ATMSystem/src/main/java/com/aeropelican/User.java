@@ -1,5 +1,7 @@
-package ATMSystem;
+package com.aeropelican;
+
 public class User {
+
     private int accountNo;
     private String userName;
     private double balance;
