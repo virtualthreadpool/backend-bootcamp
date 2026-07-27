@@ -1,0 +1,10 @@
+# Default ignored files
+/../../EmployeeManagementSystemusingJDBC./.idea/shelf/
+/../../EmployeeManagementSystemusingJDBC./.idea/workspace.xml
+# Editor-based HTTP Client requests
+/../../EmployeeManagementSystemusingJDBC./.idea/httpRequests/
+# Ignored default folder with query files
+/../../EmployeeManagementSystemusingJDBC./.idea/queries/
+# Datasource local storage ignored files
+/../../EmployeeManagementSystemusingJDBC./.idea/dataSources/
+/../../EmployeeManagementSystemusingJDBC./.idea/dataSources.local.xml
